@@ -17,26 +17,7 @@ Nombra las fases de GIT y que pasa en cada una de ellas
 2.-Tracked: ya se le esta dando un seguimiento al archivo<br>
 3.-Modified: se realizan modificaciones al archivo<br>
 4.-Staged: el archivo ya fue modificado y esta listo para que se le haga Commit<br>
-5.-Commited: se suben los cambios al repositorio <br>
-
-¿Que son las cosas que NO se deben hacer en un repositorio de GIT?<br>
-1.- Realizar cambios en la rama master sin permiso<br>
-2.- Usar GIT Pull <br>
-3.- Subir archivos binarios<br>
-4.- Usar fast forward <br>
-
-¿A que año debía volver Marty McFly para reestablecer la linea de tiempo? 1955. <br>
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Del Index parten 2 ventanas, la ventana de Busqueda que es la ventana en la cual se arrojan los resultados encontrados en la busqueda que el cliente haya realizado de algun alimento o restaurante a traves de la barra de busqueda ubicada en la pagina del index, y la ventana de Ingresar, en la cual el cliente podra iniciar en su cuenta (en caso de tener una) para poder realizar alguna compra. 
-
-De la ventana de Ingresar partiran otras 2 ventanas, Crear Cuenta, en la cual el cliente podra registrarse en el sitio en caso de no estar registrado ya, y tambien Iniciar Sesion, donde en caso de ya estar registrado el cliente, podra ingresar sus datos para logearse en el sitio... Ambas ventanas tendran como siguiente destino Mi Perfil, que es donde el cliente podra actualizar sus datos personales, esta ventana tendra acceso tambien al Index o a la barra de busqueda.
-
-Finalmente la ventana de busqueda tendra como siguiente destino el carrito de compras, donde el cliente podra verificar las compras que ha registrado y a partir de ahi podra proceder al pago
+5.-Commited: se suben los cambios al repositorio <br>W
 
 
 
