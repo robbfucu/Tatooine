@@ -20,4 +20,32 @@ Nombra las fases de GIT y que pasa en cada una de ellas
 5.-Commited: se suben los cambios al repositorio <br>W
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+El mapa correspondiente del sitio es el siguiente:
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/sitemap.jpg)
+
+A continuacion muestro los mock-ups correspondientes a las diferentes ventanas de navegacion del sitio:
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/1.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/2.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/3.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/4.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/5.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/6.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/7.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/8.png)
+
+![Texto alternativo](/home/robbfucu/Documents/Proyectos/Tatooine/images/9.png)
+
+
+La paleta de colores a usar sera la siguiente: https://colorhunt.co/palette/143563
