@@ -1,0 +1,144 @@
+/* Add an orange background color to the top navigation bar */
+nav {
+    overflow: hidden;
+    background-color: #fd5f00;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    flex-direction: row;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #f88020;
+    color: black;
+}
+
+/* Style the search box inside the navigation bar */
+nav input[type=text] {
+    padding-left: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+
+    nav a,
+    .topnav input[type=text] {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    nav input[type=text] {
+        border: 2px solid #ccc;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#lens {
+    position: absolute;
+    top: 10px;
+    font-size: 35px;
+    background-color: firebrick;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: .5;
+    background-color: black;
+}
+
+#rests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 5;
+    align-self: flex-start;
+    background-color: aqua;
+    flex-wrap: wrap;
+    padding: 10;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#logobox {
+    flex: 1;
+}
+
+#box_search_buttons {
+    flex: 5;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+#searchbar {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+}
+
+#carrousel {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30;
+}
+.modal .content_modal{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    z-index: 99999999;
+}
+.modal article{
+    height: 300px;
+    background: #bc651a;
+}
+.modal a:hover{
+    color: #c0329b;
+}
+.modal a:target{
+    opacity: 1;
+    top:0;
+}

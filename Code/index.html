@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+
+<head>
     <meta charset="UTF8">
     <meta name="title" content="Yum!">
     <meta name="description" content="Yum Site">
-    <link href="" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="SearchBar">
-            <div class="container-1">
-                <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Que quieres comer hoy?" />
+        <nav>
+            <div id="logobox">
+                <img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60">
             </div>
-        </div>
+            <div id="box_search_buttons">
+                <div id="searchbar">
+                    <input type="text" placeholder="Que se te antoja hoy?">
+                    <i id="lens" class="fas fa-search fa-3x"></i>
+                </div>
+                <div class="buttons">
+                    <a href="#" id="show_modal">Mi Cuenta</a>
+                    <section id="modal" class="modal" >
+                    <div class="content_modal">
+                       <article></article>
+                    </div>
+                    <a href="#" class="button_close_modal"></a>                     
+                    </section>
+                </div>
+                <a href="#">Restaurantes</a>
+                <a href="#">Carrito</a>
+            </div>
+        </nav>
     </header>
+    <section id="Carrousel">
+        aqui va el carrousel
+    </section>
 
+    <main>
+        <aside>
+            <img id="search" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/busca.jpg" width="120" height="120">
+            <p> BUSCA!!</p>
+            <img id="choose" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/elige.jpeg" width="120" height="120">
+            <p> ELIGE!!</p>
+            <img id="order" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/ordena.jpg" width="120" height="120">
+            <p> ORDENA!!</p>
+            <img id="enjoy" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/disfruta.jpg" width="120" height="120">
+            <p> DISFRUTA!!</p>
+        </aside>
+        <div id="rests">
+            <img id="r1" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+            <img id="r2" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+            <img id="r3" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+            <img id="r4" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+            <img id="r5" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+            <img id="r6" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/r1.jpg" width="320" height="240">
+
+        </div>
+    </main>
 </body>
+
+<footer>
+</footer>
+
 </html>
