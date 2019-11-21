@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF8">
+  <meta name="title" content="Yum!">
+  <meta name="description" content="Yum Site">
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+  <header>
+    <nav>
+      <div id="logobox">
+        <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
+      </div>
+      <div id="box_search_buttons">
+        <form id="searchbar">
+          <input type="text" placeholder="Que se te antoja hoy?">
+          <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
+        </form>
+        <div class="buttons">
+          <a href="perfil.html">Mi Cuenta</a>
+        </div>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i></a>
+      </div>
+    </nav>
+  </header>
+  <!-- Opciones de Perfil -->
+  <div class="wrapper_profile">
+    <aside id="profile">
+      <a href="#">
+        <h3>Datos de Usuario</h3>
+      </a>
+      <a href="#">
+        <h3>Datos de Pago</h3>
+      </a>
+    </aside>
+    <!-- datos de perfil -->
+    <section id="user_data">
+      <form id="user_profile">
+        <label for="username2">Nombre</label>
+        <input class="payment" type="text" name="username2" placeholder="Nombre" id="username2"><br>
+        <br>
+        <label for="user_adress">Direccion</label>
+        <textarea class="payment" rows="8" cols="19" name="address" placeholder="Direccion" id="user_adress"></textarea><br>
+        <br>
+        <label>Foto de Pefil</label> <button type="button"> Seleccionar Foto</button><br>
+        <br>
+        <button type="button">Guardar Cambios</button>
+      </form>
+      <hr width="850px" noshade="noshade">
+      <!-- datos de pago -->
+      <form action="user_payment">
+        <label for="card_owner">Agregar Nueva Tarjeta</label>
+        <input class="payment" type="text" name="card_owner" placeholder="Nombre en Tarjeta" id="card_owner">
+        <input class="payment" type="number" name="card_number" placeholder="Numero de tarjeta"><br>
+        <label>Fecha de Vencimiento</label>
+        <select>
+          <option value="01">01</option>
+          <option value="02">02 </option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select>
+          <option value="16"> 2016</option>
+          <option value="17"> 2017</option>
+          <option value="18"> 2018</option>
+          <option value="19"> 2019</option>
+          <option value="20"> 2020</option>
+          <option value="21"> 2021</option>
+        </select>
+        <input class="payment" type="number" name="cvv" placeholder="CVV">
+      </form>
+      <hr width="850px" noshade="noshade">
+      Metodos de Pago Guardados
+    </section>
+  </div>
 </body>
+
 </html>

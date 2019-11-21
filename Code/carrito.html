@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html lang="">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF8">
+    <meta name="title" content="Yum!">
+    <meta name="description" content="Yum Site">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+    <header>
+        <nav>
+            <div id="logobox">
+                <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
+            </div>
+            <div id="box_search_buttons">
+                <form id="searchbar">
+                    <input type="text" placeholder="Que se te antoja hoy?">
+                    <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
+                </form>
+                <div class="buttons">
+                    <a href="perfil.html">Mi Cuenta</a>
+                </div>
+                <a href="restaurantes.html">Restaurantes</a>
+                <a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main id="shopping_cart">
+        <div class="column_shop">
+            <p class="delete_all"> eliminar todo</p>
+            <div class="box">
+                <img src="https://via.placeholder.com/200" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="price"> precio</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/200" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="price"> precio</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/200" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="price"> precio</p>
+            </div>
+            <p class="sub"> subtotal (total de productos)            Precio Total</p>
+        </div>
+    </main>
+<a href="compra.html" class="button">Proceder al Pago</a>
 </body>
+
 </html>

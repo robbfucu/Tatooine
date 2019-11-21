@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF8">
+    <meta name="title" content="Yum!">
+    <meta name="description" content="Yum Site">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+    <header>
+        <nav>
+            <div id="logobox">
+                <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
+            </div>
+            <div id="box_search_buttons">
+                <form id="searchbar">
+                    <input type="text" placeholder="Que se te antoja hoy?">
+                    <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
+                </form>
+                <div class="buttons">
+                    <a href="perfil.html">Mi Cuenta</a>
+                </div>
+                <a href="restaurantes.html">Restaurantes</a>
+                <a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="logo">
+    </section>
+    <main class="register">
+        <img id="imgreg" src="https://via.placeholder.com/240" alt="Imagen">
+        <form id="register">
+             <br>
+            <input type="text" name="username" placeholder="Nombre de Usuario:"><br>
+            <br>
+            <input type="email" name="email" placeholder="E-Mail"><br>
+            <br>
+            <input type="number" name="phone_number" placeholder="Numero de Telefono"><br>
+            <br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <br>
+            <input type="password" name="password_confirm" placeholder="Confirmar Password"><br>
+            <br>
+            <input type="submit" value="Registrar">
+        </form>
+
+    </main>
 </body>
+
 </html>
