@@ -1,72 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="">
 <head>
-  <meta charset="UTF8">
-  <meta name="title" content="Yum!">
-  <meta name="description" content="Yum Site">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="reset.css" rel="stylesheet" type="text/css">
-  <link href="estilos.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>Navbar</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <div id="logobox">
-        <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
-      </div>
-      <div id="box_search_buttons">
-        <form id="searchbar">
-          <input type="text" placeholder="Que se te antoja hoy?">
-          <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
+    <nav class="topnav">
+      <a class="active" href="index.html"><img src="https://via.placeholder.com/10"></a>
+      <a href="restaurantes.html">Restaurantes</a>
+      <a href="perfil.html">Mi cuenta</a>
+      <a href="carrito.html">Carrito</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Que se te antoja hoy?" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <div class="buttons">
-          <a href="perfil.html">Mi Cuenta</a>
-        </div>
-        <a href="restaurantes.html">Restaurantes</a>
-        <a href="carrito.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
       </div>
     </nav>
   </header>
-</body>
-<div class="wrapper_payment">
-  <aside id="shopping_payment">
-    <div id="deliver_data">
-      <label>
-        <h3> Direccion de Envio</h3>
-      </label>
-      <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, necessitatibus eos beatae! Hic quas numquam inventore quia maxime ullam debitis eos quis, assumenda a magnam sequi quos rerum voluptas! </label>
-    </div>
-    <div id="deliver_payment">
-      <label>Metodo de Pago</label>
-      <select>
-        <option value="01">Tarjeta 1</option>
-        <option value="02">Tarjeta 2</option>
-        <option value="03">Paypal</option>
-        <option value="04">Efectivo</option>
-      </select>
-    </div>
-  </aside>
-  <section id="payment_view">
-    <div class="column_payment">
-      <p class="delete_all"> eliminar todo</p>
-      <div class="box">
-        <img src="https://via.placeholder.com/200" alt="Imagen">
-        <p class="price"> precio</p>
+  <div id="wrapper_shop">
+    <aside id="shopping_payment">
+      <div id="deliver_data">
+        <label>
+          <h3> Direccion de Envio</h3>
+        </label>
+        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, necessitatibus eos beatae! Hic quas numquam inventore quia maxime ullam debitis eos quis, assumenda a magnam sequi quos rerum voluptas! </label>
       </div>
-      <div class="box">
-        <img src="https://via.placeholder.com/200" alt="Imagen">
-        <p class="price"> precio</p>
+      <div id="deliver_payment">
+        <label>Metodo de Pago</label>
+        <select>
+          <option value="01">Tarjeta 1</option>
+          <option value="02">Tarjeta 2</option>
+          <option value="03">Paypal</option>
+          <option value="04">Efectivo</option>
+        </select>
       </div>
-      <div class="box">
-        <img src="https://via.placeholder.com/200" alt="Imagen">
-        <p class="price"> precio</p>
+    </aside>
+    <section id="payment_view">
+      <div id="column_payment">
+        <a href="#" class="button" id="delete_all">Eliminar Todo</a>
+        <div class="box">
+          <img src="https://via.placeholder.com/200" alt="Imagen">
+          <p class="price"> precio</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/200" alt="Imagen">
+          <p class="price"> precio</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/200" alt="Imagen">
+          <p class="price"> precio</p>
+        </div>
+        <p id="total"> Total a pagar:</p>
       </div>
-      <p class="total"> Total a pagar:</p>
-    </div>
+    </section>
+  </div>
+  <footer>
     <button id="confirm_payment">Confirmar Pago</button>
-  </section>
-</div>
-
-</html>
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>

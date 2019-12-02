@@ -1,74 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="">
 <head>
-    <meta charset="UTF8">
-    <meta name="title" content="Yum!">
-    <meta name="description" content="Yum Site">
-    <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="estilos.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>Navbar</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="logobox">
-                <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
-            </div>
-            <div id="box_search_buttons">
-                <form id="searchbar">
-                    <input type="text" placeholder="Que se te antoja hoy?">
-                    <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
-                </form>
-                <div class="buttons">
-                    <a href="perfil.html">Mi Cuenta</a>
-                </div>
-                <a href="restaurantes.html">Restaurantes</a>
-                <a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i></a>
-            </div>
-        </nav>
-    </header>
-    <div class="wrapper">
-        <aside class="filters">
-            <p> FILTRO 1</p>
-            <p> FILTRO 2</p>
-            <p> FILTRO 3</p>
-        </aside>
-        <main class="index_main">
-            <section class="rests">
-                <div class="column">
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://via.placeholder.com/200" alt="Imagen">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+  <header>
+    <nav class="topnav">
+      <a class="active" href="index.html"><img src="https://via.placeholder.com/10"></a>
+      <a href="restaurantes.html">Restaurantes</a>
+      <a href="perfil.html">Mi cuenta</a>
+      <a href="carrito.html">Carrito</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Que se te antoja hoy?" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div id="wrapper_search">
+    <aside class="rests_filter">
+      <div class="filters_select_aside">
+        <label for="filter1">Filtro 1</label>
+        <select class="filters_select" id="filter1">
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+        </select>
+      </div>
+      <div class="filters_select_aside">
+        <label for="filter2"> Filtro 2</label>
+        <select class="filters_select" id="filter2">
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+        </select>
+      </div>
+      <div class="filters_select_aside">
+        <label for="filter3"> Filtro 3</label>
+        <select class="filters_select" id="filter3">
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+        </select>
+      </div>
+    </aside>
+    <section id="rests_search">
+      <h1 class="rest_name"> Nombre del Restaurante</h1>
+      <div class="box">
+        <img src="https://via.placeholder.com/200" alt="Imagen">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="button">Agregar al Carrito</a>
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/200" alt="Imagen">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="button">Agregar al Carrito</a>
+      </div>
+      <h1 class="rest_name"> Nombre del Restaurante</h1>
+      <div class="box">
+        <img src="https://via.placeholder.com/200" alt="Imagen">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="button">Agregar al Carrito</a>
+       </div>
+       <div class="box">
+        <img src="https://via.placeholder.com/200" alt="Imagen">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="button">Agregar al Carrito</a>
+      </div>
+    </section>
+  </div>
 </body>
-
-</html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>

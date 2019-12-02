@@ -1,108 +1,82 @@
-/* Add an orange background color to the top navigation bar */
-nav {
-  overflow: hidden;
-  background-color: #fd5f00;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
+* {
+  box-sizing: border-box;
 }
 
-/* Style the links inside the navigation bar */
-nav a {
-  display: flex;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f45905;
+}
+
+.topnav a {
+  float: left;
+  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  flex-direction: row;
 }
 
-/* Change the color of links on hover */
-nav a:hover {
-  background-color: #f88020;
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
 }
 
-/* Style the search box inside the navigation bar */
-nav input[type=text] {
-  padding-left: 10px;
+.topnav a.active {
+  background-color: #c70d3a;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
   border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  margin-left: 10px;
-  margin-bottom: 25px;
-  font-size: 18px;
-  width: 750px;
-  display: flex;
-  flex-direction: row;
-
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-
-  nav a,
-  .topnav input[type=text] {
-    display: flex;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-
-  nav input[type=text] {
-    border: 2px solid #ccc;
-  }
-}
-
-#search_button {
-  display: flex;
-  margin: 12px;
-  margin-top: 7px;
-  margin-bottom: 24px;
-  margin-left: -16px;
-  background-color: #76b39d;
+  background: #45969b;
+  font-size: 17px;
   border: none;
-  color: white;
-  text-decoration: none;
   cursor: pointer;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  font-family: sans-serif;
-  flex: 1;
-  justify-content: flex-end;
+.topnav .search-container button:hover {
+  background: #ccc;
 }
-
-p {
-  font-family: sans-serif;
+ 
+#carrousel {
+  justify-content: center;
+  background-color: fuchsia;
+  display: flex;
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-aside {
-  background-color: blue;
-  width: 10%;
-}
-
-.index_main {
-  background-color: green;
-  width: 90%;
-}
-
-.rests {
+#rests {
   display: flex;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  background-color: forestgreen;
 }
 
 .box {
@@ -114,76 +88,10 @@ aside {
 
 .box p {
   padding: 20px;
-  color: white;
 }
 
-#logobox {
-  flex: 1;
-}
-
-#box_search_buttons {
-  flex: 5;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  display: flex;
-}
-
-#searchbar {
-  display: flex;
-  flex: 3;
-  justify-content: flex-end;
-}
-
-#carrousel {
-  justify-content: center;
-  background-color: fuchsia;
-  display: flex;
-}
-
-#carrousel > p {
-  font-family: sans-serif;
-  font-size: 30;
-}
-
-.res_data {
-  display: flex;
-  flex: 15;
-}
-
-aside p {
-  color: white;
-}
-
-.register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.price {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.delete_all {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#imgreg {
-  width: 200px;
-}
-
-#register {
-  margin: 20px;
-  border: 3px;
+aside {
+  background-color: aqua;
 }
 
 .column_shop {
@@ -195,13 +103,6 @@ aside p {
   width: 60%;
   height: 40%;
 }
-
-.filters {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-}
-
 #shopping_cart {
   display: flex;
   justify-content: center;
@@ -215,6 +116,18 @@ aside p {
   padding: -50;
 }
 
+.price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#user_data {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  
+}
+
 #profile {
   display: flex;
   flex-direction: column;
@@ -226,25 +139,7 @@ aside p {
 
 }
 
-.wrapper_profile {
-  display: flex;
-  align-items: flex-start;
-  background-color: aqua;
-}
-
-#user_data {
-  display: flex;
-  flex-direction: column;
-  font-size: 28px;
-  
-}
-
-.payment {
-  width: 320px;
-  size: 32;
-}
-
-.wrapper_profile a {
+#profile a{
   display: flex;
   color: black;
   text-align: center;
@@ -252,53 +147,153 @@ aside p {
   flex-direction: row;
 }
 
-.wrapper_profile a:hover {
-  color: white;
+#profile a:hover{
+    color: white;
 }
-
-.rests_main {
+.profile_changes{
+  width: 30%;
+}
+.rests_filter{
   display: flex;
-  justify-content: center;
-  background-color: green;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blue;
+  width: 10%;
 }
 
-#shopping_payment {
-  border: solid;
-}
-
-#deliver_payment {
-  border: solid;
-}
-
-.column_payment {
+.register {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px solid black;
+  background-color: white;
+  margin-top: 50px;
+}
+#shopping_payment{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+}
+#column_payment {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 410px;
   background-color: pink;
 }
-
-.total {
+#total {
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
 }
-
-.wrapper_payment {
+#delete_all {
   display: flex;
+  justify-content: flex-end;
 }
-
-#payment_view {
-  width: 50%
-}
-
-#shopping_payment {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
-  width: 20%;
-}
-
 #confirm_payment {
   float: right;
+}
+#wrapper_shop{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper_index{
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper_search{
+  display: flex;
+  justify-content: space-between;
+}
+.rest_name{
+ font-size: 30px; 
+}
+#go_payment{
+  color: white;
+}
+#rests_search{
+  flex-direction: column;
+  margin-right: 20%;
+}
+
+
+
+/* Responsivo para max: 600px  */
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+  #carrousel {
+    display: none;
+  }
+
+  #aside-index {
+    display: none;
+  }
+
+  #rests {
+    flex-direction: column;
+  }
+  .column_shop{
+    width: 100%;
+  }
+  #profile{
+    width: 40%;
+  }
+  #user_data{
+    width: 60%;
+  }
+  hr{
+    width: 100%;
+  }
+  #wrapper_shop{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #shopping_payment{
+    width: 100%;
+    margin-top: 20px;
+  }
+  #column_payment{
+    width: 100%;
+    margin: auto;
+  }
+   #wrapper_search{
+    flex-direction: column;
+    justify-content: center;
+}
+  .wrapper_index{
+    flex-direction: column;
+    justify-content: center;
+}
+  .rests_filter{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    height: 70px;
+  }
+  #rests_search{
+    height: 100%;
+    margin-right: auto;
+  }
+  #rests_filter{
+    height: 100%;
+    margin-right: auto;
+  }
 }

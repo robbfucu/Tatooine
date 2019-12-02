@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-  <meta charset="UTF8">
-  <meta name="title" content="Yum!">
-  <meta name="description" content="Yum Site">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="reset.css" rel="stylesheet" type="text/css">
-  <link href="estilos.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>Navbar</title>
 </head>
-
 <body>
   <header>
-    <nav>
-      <div id="logobox">
-        <a href="index.html"><img id="logo" src="/home/robbfucu/Documents/Proyectos/Tatooine/images/site-images/logo.png" width="50" height="60"></a>
-      </div>
-      <div id="box_search_buttons">
-        <form id="searchbar">
-          <input type="text" placeholder="Que se te antoja hoy?">
-          <button id="search_button"><span class=""><i class="fas fa-search fa-2x"></i></span></button>
+    <nav class="topnav">
+      <a href="index.html"><img src="https://via.placeholder.com/10"></a>
+      <a href="restaurantes.html">Restaurantes</a>
+      <a class="active" href="perfil.html">Mi cuenta</a>
+      <a href="carrito.html">Carrito</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Que se te antoja hoy?" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <div class="buttons">
-          <a href="perfil.html">Mi Cuenta</a>
-        </div>
-        <a href="restaurantes.html">Restaurantes</a>
-        <a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i></a>
       </div>
     </nav>
   </header>
   <!-- Opciones de Perfil -->
-  <div class="wrapper_profile">
+  <div class="wrapper">
     <aside id="profile">
       <a href="#">
         <h3>Datos de Usuario</h3>
@@ -49,8 +42,8 @@
         <textarea class="payment" rows="8" cols="19" name="address" placeholder="Direccion" id="user_adress"></textarea><br>
         <br>
         <label>Foto de Pefil</label> <button type="button"> Seleccionar Foto</button><br>
+        <button class="profile_changes" type="button">Guardar Cambios</button>
         <br>
-        <button type="button">Guardar Cambios</button>
       </form>
       <hr width="850px" noshade="noshade">
       <!-- datos de pago -->
@@ -83,10 +76,13 @@
         </select>
         <input class="payment" type="number" name="cvv" placeholder="CVV">
       </form>
+      <button class="profile_changes" type="button">Guardar Cambios</button>
       <hr width="850px" noshade="noshade">
       Metodos de Pago Guardados
+      <button class="profile_changes"> Tarjeta 1 </button>
+      <button class="profile_changes"> Tarjeta 2</button>
     </section>
   </div>
 </body>
-
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </html>
