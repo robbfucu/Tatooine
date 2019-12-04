@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="reset.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="estilos.css" type="text/css">
-  <title>Navbar</title>
+  <title>Yum! Delivery</title>
 </head>
 
 <body>
   <header>
-    <nav class="topnav">
-      <a class="active" href="index.html" title="Home"><img src="https://via.placeholder.com/10"></a>
-      <a href="restaurantes.html" title="Restaurantes"><i class="fas fa-utensils fa-2x"></i></a>
-      <a href="perfil.html" title="Perfil"><i class="fas fa-user fa-2x"></i></a>
-      <a href="carrito.html" title="Carrito"><i class="fas fa-shopping-cart fa-2x"></i></a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Que se te antoja hoy?" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
+    <nav class="nav_area">
+      <ul>
+       <li><a class="active" href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
+        <li><a href="restaurantes.html">Restaurantes</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+      </ul>
+      <form action="">
+        <input type="search" placeholder="Que se te antoja hoy?">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+      <a class="active" href="index.html" id="home_full"><img src="https://via.placeholder.com/40"></a>
     </nav>
   </header>
   <div id="wrapper_search">
