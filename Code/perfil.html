@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
   <link rel="stylesheet" href="estilos.css" type="text/css">
   <title>Yum! Delivery</title>
 </head>
+
 <body>
   <header>
     <nav class="nav_area">
       <ul>
-       <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
+        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a class="active" href="perfil.html">Perfil</a></li>
         <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
@@ -20,7 +22,7 @@
         <input type="search" placeholder="Que se te antoja hoy?">
         <button><i class="fas fa-search"></i></button>
       </form>
-      <a href="index.html"  id="home_full"><img src="https://via.placeholder.com/40"></a>
+      <a href="index.html" id="home_full"><img src="https://via.placeholder.com/40"></a>
     </nav>
   </header>
   <!-- Opciones de Perfil -->
@@ -35,49 +37,78 @@
     </aside>
     <!-- datos de perfil -->
     <section id="user_data">
-      <form id="user_profile">
-        <label for="username2">Nombre</label>
-        <input class="payment" type="text" name="username2" placeholder="Nombre" id="username2"><br>
-        <br>
-        <label for="user_adress">Direccion</label>
-        <textarea class="payment" rows="8" cols="19" name="address" placeholder="Direccion" id="user_adress"></textarea><br>
-        <br>
-        <label>Foto de Pefil</label> <button type="button"> Seleccionar Foto</button><br>
-        <button class="profile_changes" type="button">Guardar Cambios</button>
-        <br>
+      <div class="pic-container pic-large pic-circle">
+        <img class="pic" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt="">
+        <div class="pic-overlay">
+          <a><i class="fa fa-window-close-o" aria-hidden="true"></i></a>
+          <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <form>
+        <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+        <label for="nme"><span>Nombre</span></label>
+        <textarea name="address" rows="2" class="question" id="address" required autocomplete="off"></textarea>
+        <label for="address"><span>Direccion</span></label><br>
       </form>
+      <button type="submit" class="proceed-btn"><a href="#">Guardar</a></button>
       <hr width="850px" noshade="noshade">
       <!-- datos de pago -->
-      <form action="user_payment">
-        <label for="card_owner">Agregar Nueva Tarjeta</label>
-        <input class="payment" type="text" name="card_owner" placeholder="Nombre en Tarjeta" id="card_owner">
-        <input class="payment" type="number" name="card_number" placeholder="Numero de tarjeta"><br>
-        <label>Fecha de Vencimiento</label>
-        <select>
-          <option value="01">01</option>
-          <option value="02">02 </option>
-          <option value="03">03</option>
-          <option value="04">04</option>
-          <option value="05">05</option>
-          <option value="06">06</option>
-          <option value="07">07</option>
-          <option value="08">08</option>
-          <option value="09">09</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
+      <form class="credit-card">
+  <div class="form-header">
+    <h4 class="title">Registrar Nuevo Metodo de Pago</h4>
+  </div>
+ 
+  <div class="form-body">
+    <!-- Card Number -->
+    <input type="text" class="card-number" placeholder="Numero de Tarjeta">
+ 
+    <!-- Date Field -->
+    <div class="date-field">
+      <div class="month">
+        <select name="Month">
+          <option value="Enero">Enero</option>
+          <option value="Febrero">Febrero</option>
+          <option value="Marzo">Marzo</option>
+          <option value="Abril">Abril</option>
+          <option value="Mayo">Mayo</option>
+          <option value="Junio">Junio</option>
+          <option value="Julio">Julio</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Septiembre">Septiembre</option>
+          <option value="Octubre">Octubre</option>
+          <option value="Noviembre">Noviembre</option>
+          <option value="Diciembre">Diciembre</option>
         </select>
-        <select>
-          <option value="16"> 2016</option>
-          <option value="17"> 2017</option>
-          <option value="18"> 2018</option>
-          <option value="19"> 2019</option>
-          <option value="20"> 2020</option>
-          <option value="21"> 2021</option>
+      </div>
+      <div class="year">
+        <select name="Year">
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
         </select>
-        <input class="payment" type="number" name="cvv" placeholder="CVV">
-      </form>
-      <button class="profile_changes" type="button">Guardar Cambios</button>
+      </div>
+    </div>
+ 
+    <!-- Card Verification Field -->
+    <div class="card-verification">
+      <div class="cvv-input">
+        <input type="text" placeholder="CVV">
+      </div>
+      <div class="cvv-details">
+        <p>3 o 4 digitos que estan<br>   al reverso de la tarjeta</p>
+      </div>
+    </div>
+ 
+    <!-- Buttons -->
+    <button type="submit" class="proceed-btn"><a href="#">Guardar</a></button>
+  </div>
+</form>
       <hr width="850px" noshade="noshade">
       Metodos de Pago Guardados
       <button class="profile_changes"> Tarjeta 1 </button>
@@ -85,5 +116,4 @@
     </section>
   </div>
 </body>
-<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
-</html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>
