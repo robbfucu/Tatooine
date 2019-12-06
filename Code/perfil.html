@@ -37,7 +37,7 @@
     </aside>
     <!-- datos de perfil -->
     <section id="user_data">
-      <div class="pic-container pic-large pic-circle">
+      <div class="pic-container pic-medium pic-circle">
         <img class="pic" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt="">
         <div class="pic-overlay">
           <a><i class="fa fa-window-close-o" aria-hidden="true"></i></a>
@@ -45,75 +45,52 @@
         </div>
       </div>
       <form>
-        <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-        <label for="nme"><span>Nombre</span></label>
-        <textarea name="address" rows="2" class="question" id="address" required autocomplete="off"></textarea>
-        <label for="address"><span>Direccion</span></label><br>
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Direccion</label>
+        <input type="text" id="lname" name="lname">
       </form>
-      <button type="submit" class="proceed-btn"><a href="#">Guardar</a></button>
-      <hr width="850px" noshade="noshade">
+      <button type="submit" class="proceed-btn">Guardar</button>
+      <hr width="100%" noshade="noshade">
       <!-- datos de pago -->
-      <form class="credit-card">
-  <div class="form-header">
-    <h4 class="title">Registrar Nuevo Metodo de Pago</h4>
-  </div>
- 
-  <div class="form-body">
-    <!-- Card Number -->
-    <input type="text" class="card-number" placeholder="Numero de Tarjeta">
- 
-    <!-- Date Field -->
-    <div class="date-field">
-      <div class="month">
-        <select name="Month">
-          <option value="Enero">Enero</option>
-          <option value="Febrero">Febrero</option>
-          <option value="Marzo">Marzo</option>
-          <option value="Abril">Abril</option>
-          <option value="Mayo">Mayo</option>
-          <option value="Junio">Junio</option>
-          <option value="Julio">Julio</option>
-          <option value="Agosto">Agosto</option>
-          <option value="Septiembre">Septiembre</option>
-          <option value="Octubre">Octubre</option>
-          <option value="Noviembre">Noviembre</option>
-          <option value="Diciembre">Diciembre</option>
-        </select>
+      <h3>Registrar Nueva Tarjeta</h3>
+      <div class="wrapper-card">
+        <div class="container">
+          <div class="card-number">
+            <label>Numero de Tarjeta</label>
+            <input placeholder="0000 0000 0000 0000" type="number">
+          </div>
+          <div class="name">
+            <label>Nombre</label>
+            <input placeholder="Nombre" type="text">
+          </div>
+          <div class="expiration-security">
+            <div class="expiration">
+              <label>Fecha de Vencimiento</label>
+              <div class="expiry-inputs">
+                <input class="month" placeholder="MM" type="number">
+                <input class="year" placeholder="YYYY" type="number">
+              </div>
+            </div>
+            <div class="security">
+              <label>Codigo de Seguridad</label>
+              <input placeholder="087" type="password">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="year">
-        <select name="Year">
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-          <option value="2020">2020</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-        </select>
+      <hr width="100%" noshade="noshade">
+      <div class="dropdown">
+        <button class="dropbtn">Metodos de Pago Guardados</button>
+        <div class="dropdown-content">
+          <a href="#">Tarjeta 1</a>
+          <a href="#">Tarjeta 2</a>
+          <a href="#">Tarjeta 3</a>
+        </div>
       </div>
-    </div>
- 
-    <!-- Card Verification Field -->
-    <div class="card-verification">
-      <div class="cvv-input">
-        <input type="text" placeholder="CVV">
-      </div>
-      <div class="cvv-details">
-        <p>3 o 4 digitos que estan<br>   al reverso de la tarjeta</p>
-      </div>
-    </div>
- 
-    <!-- Buttons -->
-    <button type="submit" class="proceed-btn"><a href="#">Guardar</a></button>
-  </div>
-</form>
-      <hr width="850px" noshade="noshade">
-      Metodos de Pago Guardados
-      <button class="profile_changes"> Tarjeta 1 </button>
-      <button class="profile_changes"> Tarjeta 2</button>
     </section>
   </div>
 </body>
-<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+
+</html>
