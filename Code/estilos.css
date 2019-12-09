@@ -14,6 +14,9 @@ body {
   border: none;
   width: 95px;
 }
+.proceed-btn:hover{
+  background-color: #ff7315;
+}
 .nav_area {
   display: flex;
   flex-direction: row-reverse;
@@ -272,13 +275,19 @@ input {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #ff7315;}
+.dropdown:hover .dropbtn {
+  background-color: #ff7315;
+}
 
 .rests_filter {
   display: flex;
@@ -366,30 +375,9 @@ input {
   display: block;
 }
 
-.pic-container.pic-xs{
-  width: 50px;
-  height: 50px;
-}
-
-.pic-container.pic-small{
-  width: 70px;
-  height: 70px;
-}
-
 .pic-container.pic-medium{
   width: 150px;
   height: 150px;
-}
-
-.pic-container.pic-large{
-  width: 250px;
-  height: 250px;
-}
-
-
-.pic-container.pic-xl{
-  width: 350px;
-  height: 350px;
 }
 
 .pic-container.pic-circle{
@@ -419,9 +407,7 @@ input {
   padding: 10px;
 }
 
-.pic-xs .pic-overlay a{
-  padding: 5px;
-}
+
 
 .pic-overlay .fa-window-close-o{
   color: red;
@@ -435,20 +421,12 @@ input {
   font-size: 20px;
 }
 
-.pic-large .pic-overlay a i{
-  font-size: 35px;
-}
-
-.pic-xl .pic-overlay a i{
-  font-size: 45px;
-}
 
 /* Inputs Nombre y Direccion*/
 .userdata {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid red;
 }
@@ -583,7 +561,9 @@ input {
     margin-bottom: 10px;
   }
   #user_data{
-    width: 60%;
+    width: 70%;
+    margin-left: 75px;
+
   }
   hr{
     width: 100%;
@@ -591,7 +571,72 @@ input {
   #profile{
     width: 35%;
   }
+  .wrapper-card{
+    width:80%;
+  }
   .wrapper-card input{
     width: 90%;
+  }
+  .column_shop {
+    width: 100%;
+  }
+
+  #profile {
+    width: 40%;
+  }
+
+  #user_data {
+    width: 60%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  #wrapper_shop {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #shopping_payment {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #column_payment {
+    width: 100%;
+    margin: auto;
+  }
+
+  #wrapper_search {
+    flex-direction: column;
+    justify-content: center;
+    margin-top:20px;
+  }
+
+  .wrapper_index {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rests_filter {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    height: 70px;
+  }
+
+  #rests_search {
+    height: 100%;
+    margin-right: auto;
+  }
+
+  #rests_filter {
+    height: 100%;
+    margin-right: auto;
+  }
+  #rests{
+    margin: 0;
   }
 }
