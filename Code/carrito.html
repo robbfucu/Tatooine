@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,9 @@
 
 <body>
   <header>
-   <nav class="nav_area">
+    <nav class="nav_area">
       <ul>
-       <li><a  href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
+        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a href="perfil.html">Perfil</a></li>
         <li><a class="active" href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
@@ -26,7 +27,10 @@
   </header>
   <main id="shopping_cart">
     <div class="column_shop">
-      <p class="delete_all"> eliminar todo</p>
+     <div class="wrapper">
+      <button id="delete_all"> eliminar todo</button>
+      <a href="compra.html" class="button" id="go_payment">Proceder al Pago</a>
+      </div>
       <div class="box">
         <img src="https://via.placeholder.com/200" alt="Imagen">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -43,8 +47,9 @@
         <p class="price"> precio</p>
       </div>
       <p class="sub"> subtotal (total de productos) Precio Total</p>
-      <a href="compra.html" class="button" id="go_payment">Proceder al Pago</a>
     </div>
   </main>
 </body>
-<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+
+</html>

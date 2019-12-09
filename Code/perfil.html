@@ -53,42 +53,43 @@
       <button type="submit" class="proceed-btn">Guardar</button>
       <hr width="100%" noshade="noshade">
       <!-- datos de pago -->
-      <h3>Registrar Nueva Tarjeta</h3>
-      <div class="wrapper-card">
-        <div class="container">
-          <div class="card-number">
-            <label>Numero de Tarjeta</label>
-            <input placeholder="0000 0000 0000 0000" type="number">
-          </div>
-          <div class="name">
-            <label>Nombre</label>
-            <input placeholder="Nombre" type="text">
-          </div>
-          <div class="expiration-security">
-            <div class="expiration">
-              <label>Fecha de Vencimiento</label>
-              <div class="expiry-inputs">
-                <input class="month" placeholder="MM" type="number">
-                <input class="year" placeholder="YYYY" type="number">
+      <section id="user_payment">
+        <h3>Registrar Nueva Tarjeta</h3>
+        <div class="wrapper-card">
+          <div class="container">
+            <div class="card-number">
+              <label>Numero de Tarjeta</label>
+              <input placeholder="0000 0000 0000 0000" type="number">
+            </div>
+            <div class="name">
+              <label>Nombre</label>
+              <input placeholder="Nombre" type="text">
+            </div>
+            <div class="expiration-security">
+              <div class="expiration">
+                <label>Fecha de Vencimiento</label>
+                <div class="expiry-inputs">
+                  <input class="month" placeholder="MM" type="number">
+                  <input class="year" placeholder="YYYY" type="number">
+                </div>
+              </div>
+              <div class="security">
+                <label>Codigo de Seguridad</label>
+                <input placeholder="087" type="password">
               </div>
             </div>
-            <div class="security">
-              <label>Codigo de Seguridad</label>
-              <input placeholder="087" type="password">
-            </div>
           </div>
         </div>
-      </div>
-      <hr width="100%" noshade="noshade">
-      <div class="dropdown">
-        <button class="dropbtn">Metodos de Pago Guardados</button>
-        <div class="dropdown-content">
-          <a href="#">Tarjeta 1</a>
-          <a href="#">Tarjeta 2</a>
-          <a href="#">Tarjeta 3</a>
+        <hr width="100%" noshade="noshade">
+        <div class="dropdown">
+          <button class="dropbtn">Metodos de Pago Guardados</button>
+          <div class="dropdown-content">
+            <a href="#">Tarjeta 1</a>
+            <a href="#">Tarjeta 2</a>
+            <a href="#">Tarjeta 3</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   </div>
 </body>
 

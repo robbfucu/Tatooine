@@ -6,7 +6,12 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.proceed-btn{
+
+.filters_select_aside {
+  margin-top: 20px;
+}
+
+.proceed-btn {
   background-color: #f45905;
   color: white;
   padding: 16px;
@@ -14,9 +19,11 @@ body {
   border: none;
   width: 95px;
 }
-.proceed-btn:hover{
+
+.proceed-btn:hover {
   background-color: #ff7315;
 }
+
 .nav_area {
   display: flex;
   flex-direction: row-reverse;
@@ -73,6 +80,7 @@ body {
 .nav_area a:hover {
   background-color: #c70d3a;
   color: black;
+  border-radius: 15%;
 }
 
 .nav_area a.active {
@@ -96,6 +104,10 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between;
+}
+.wrapper_payment {
+  display: flex;
+  justify-content: space-around;
 }
 
 #rests {
@@ -200,7 +212,7 @@ input {
   border: 1px solid #000;
   width: 50%;
 }
- 
+
 /* Form
 -------------------------------------------------*/
 
@@ -209,13 +221,29 @@ input {
   flex-wrap: wrap;
 }
 
-.card-number { flex: 100%; }
-.name { flex: 22rem; }
-.month { width: 5.4rem; }
-.year { width: 6.6rem; }
-.security { flex: 11rem; }
+.card-number {
+  flex: 100%;
+}
 
-.expiry-inputs { display: flex; }
+.name {
+  flex: 22rem;
+}
+
+.month {
+  width: 5.4rem;
+}
+
+.year {
+  width: 6.6rem;
+}
+
+.security {
+  flex: 11rem;
+}
+
+.expiry-inputs {
+  display: flex;
+}
 
 .expiration-security {
   display: flex;
@@ -262,7 +290,7 @@ input {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -292,9 +320,10 @@ input {
 .rests_filter {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 10%;
-  justify-content: space-around;
+  margin-top: 35px;
+
 }
 
 .register {
@@ -309,32 +338,46 @@ input {
   flex-direction: column;
   justify-content: space-around;
   width: 20%;
+  margin-left: 70px;
 }
 
 #column_payment {
   flex-direction: column;
   align-items: center;
-  margin: 10px 410px;
+  margin: 10px;
 }
 
 #total {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-right: 100px;
 }
 
 #delete_all {
-  display: flex;
-  justify-content: flex-end;
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 150px
 }
 
 #confirm_payment {
-  float: right;
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 150px;
 }
 
 #wrapper_shop {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+#payment_view {
+margin-left: 10%;
 }
 
 .wrapper_index {
@@ -352,7 +395,16 @@ input {
 }
 
 #go_payment {
-  color: black;
+  background-color: #f45905;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 #rests_search {
@@ -364,27 +416,27 @@ input {
   padding-top: 20px;
 }
 
-.pic-container{
+.pic-container {
   cursor: pointer;
   overflow: hidden;
 }
 
-.pic{
+.pic {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.pic-container.pic-medium{
+.pic-container.pic-medium {
   width: 150px;
   height: 150px;
 }
 
-.pic-container.pic-circle{
+.pic-container.pic-circle {
   border-radius: 50%;
 }
 
-.pic-overlay{
+.pic-overlay {
   background-color: #ccc;
   opacity: 0.5;
   width: 100%;
@@ -398,26 +450,26 @@ input {
 
 }
 
-.pic-container:hover .pic-overlay{
+.pic-container:hover .pic-overlay {
   top: -100%;
 }
 
-.pic-overlay a{
+.pic-overlay a {
   display: block;
   padding: 10px;
 }
 
 
 
-.pic-overlay .fa-window-close-o{
+.pic-overlay .fa-window-close-o {
   color: red;
 }
 
-.pic-overlay .fa-pencil-square-o{
+.pic-overlay .fa-pencil-square-o {
   color: blue;
 }
 
-.pic-medium .pic-overlay a i{
+.pic-medium .pic-overlay a i {
   font-size: 20px;
 }
 
@@ -430,6 +482,7 @@ input {
   border: none;
   border-bottom: 2px solid red;
 }
+
 /* Responsivo para min 768 y max 991  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -488,7 +541,7 @@ input {
   #wrapper_search {
     flex-direction: column;
     justify-content: center;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   .wrapper_index {
@@ -549,7 +602,7 @@ input {
   }
 
   #home_responsive {
-    display: block;  
+    display: block;
     margin-top: -15px;
   }
 
@@ -560,23 +613,29 @@ input {
   .nav_area > form {
     margin-bottom: 10px;
   }
-  #user_data{
+
+  #user_data {
     width: 70%;
     margin-left: 75px;
 
   }
-  hr{
+
+  hr {
     width: 100%;
   }
-  #profile{
+
+  #profile {
     width: 35%;
   }
-  .wrapper-card{
-    width:80%;
+
+  .wrapper-card {
+    width: 80%;
   }
-  .wrapper-card input{
+
+  .wrapper-card input {
     width: 90%;
   }
+
   .column_shop {
     width: 100%;
   }
@@ -594,24 +653,25 @@ input {
   }
 
   #wrapper_shop {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
 
   #shopping_payment {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 50px 0 10px;
   }
 
   #column_payment {
     width: 100%;
     margin: auto;
+    flex-direction: column;
   }
 
   #wrapper_search {
     flex-direction: column;
     justify-content: center;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   .wrapper_index {
@@ -625,6 +685,7 @@ input {
     margin-bottom: 20px;
     flex-direction: row;
     height: 70px;
+    margin-left: 75px;
   }
 
   #rests_search {
@@ -632,11 +693,22 @@ input {
     margin-right: auto;
   }
 
-  #rests_filter {
-    height: 100%;
-    margin-right: auto;
-  }
-  #rests{
+  #rests {
     margin: 0;
+  }
+
+  .filters_select_aside {
+    margin-right: 15px;
+  }
+  #payment_view{
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .wrapper_payment{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 }

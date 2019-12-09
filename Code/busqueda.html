@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
   <header>
     <nav class="nav_area">
       <ul>
-       <li><a class="active" href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
+        <li><a class="active" href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a href="perfil.html">Perfil</a></li>
         <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
@@ -27,28 +28,34 @@
   <div id="wrapper_search">
     <aside class="rests_filter">
       <div class="filters_select_aside">
-        <label for="filter1">Filtro 1</label>
-        <select class="filters_select" id="filter1">
-          <option value="01">1</option>
-          <option value="02">2</option>
-          <option value="03">3</option>
-        </select>
+        <div class="dropdown">
+          <button class="dropbtn">Filtro 1</button>
+          <div class="dropdown-content">
+            <a href="#">Opcion 1</a>
+            <a href="#">Opcion 2</a>
+            <a href="#">Opcion 3</a>
+          </div>
+        </div>
       </div>
       <div class="filters_select_aside">
-        <label for="filter2"> Filtro 2</label>
-        <select class="filters_select" id="filter2">
-          <option value="01">1</option>
-          <option value="02">2</option>
-          <option value="03">3</option>
-        </select>
+        <div class="dropdown">
+          <button class="dropbtn">Filtro 2</button>
+          <div class="dropdown-content">
+            <a href="#">Opcion 1</a>
+            <a href="#">Opcion 2</a>
+            <a href="#">Opcion 3</a>
+          </div>
+        </div>
       </div>
       <div class="filters_select_aside">
-        <label for="filter3"> Filtro 3</label>
-        <select class="filters_select" id="filter3">
-          <option value="01">1</option>
-          <option value="02">2</option>
-          <option value="03">3</option>
-        </select>
+        <div class="dropdown">
+          <button class="dropbtn">Filtro 3</button>
+          <div class="dropdown-content">
+            <a href="#">Opcion 1</a>
+            <a href="#">Opcion 2</a>
+            <a href="#">Opcion 3</a>
+          </div>
+        </div>
       </div>
     </aside>
     <section id="rests_search">
@@ -77,4 +84,6 @@
     </section>
   </div>
 </body>
-<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+
+</html>
