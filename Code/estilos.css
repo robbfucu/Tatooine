@@ -48,7 +48,7 @@ body {
 .nav_area > form {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 .nav_area input {
@@ -80,7 +80,7 @@ body {
 
 .nav_area a img {
   display: inline-flex;
-  margin-top: 18px;
+  margin-top: 8px;
 
 }
 
@@ -510,6 +510,7 @@ input {
   #wrapper_search {
     flex-direction: column;
     justify-content: center;
+    margin-top:20px;
   }
 
   .wrapper_index {
@@ -570,7 +571,8 @@ input {
   }
 
   #home_responsive {
-    display: block;
+    display: block;  
+    margin-top: -15px;
   }
 
   #home_full {
@@ -588,5 +590,8 @@ input {
   }
   #profile{
     width: 35%;
+  }
+  .wrapper-card input{
+    width: 90%;
   }
 }
