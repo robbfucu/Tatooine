@@ -105,6 +105,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .wrapper_payment {
   display: flex;
   justify-content: space-around;
@@ -204,6 +205,15 @@ input {
   font-size: 14px;
   border: 1px solid #000;
 }
+input:focus{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+
 
 .wrapper-card {
   border-radius: 2px;
@@ -326,13 +336,6 @@ input {
 
 }
 
-.register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
 #shopping_payment {
   display: flex;
   flex-direction: column;
@@ -359,7 +362,7 @@ input {
   padding: 16px;
   font-size: 16px;
   border: none;
-  width: 150px
+  width: 150px;
 }
 
 #confirm_payment {
@@ -377,7 +380,7 @@ input {
 }
 
 #payment_view {
-margin-left: 10%;
+  margin-left: 10%;
 }
 
 .wrapper_index {
@@ -396,15 +399,12 @@ margin-left: 10%;
 
 #go_payment {
   background-color: #f45905;
-  border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding: 16px;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  border: none;
+  width: 150px;
+  margin-left: 20px
 }
 
 #rests_search {
@@ -700,13 +700,15 @@ margin-left: 10%;
   .filters_select_aside {
     margin-right: 15px;
   }
-  #payment_view{
+
+  #payment_view {
     flex-direction: column;
     margin-top: 10px;
     width: 100%;
     margin-left: auto;
   }
-  .wrapper_payment{
+
+  .wrapper_payment {
     flex-direction: column;
     justify-content: center;
     width: 100%;
