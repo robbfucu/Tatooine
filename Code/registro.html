@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,9 @@
 
 <body>
   <header>
-   <nav class="nav_area">
+    <nav class="nav_area">
       <ul>
-       <li><a  href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
+        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40"></a></li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a href="perfil.html">Perfil</a></li>
         <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
@@ -21,28 +22,35 @@
         <input type="search" placeholder="Que se te antoja hoy?">
         <button><i class="fas fa-search"></i></button>
       </form>
-      <a href="index.html"  id="home_full"><img src="https://via.placeholder.com/40"></a>
+      <a href="index.html" id="home_full"><img src="https://via.placeholder.com/40"></a>
     </nav>
   </header>
-  <section class="logo">
-  </section>
-  <main class="register">
+  <main class="user_register">
+
     <img id="imgreg" src="https://via.placeholder.com/240" alt="Imagen">
+
     <form id="register">
+
+      <input type="text" name="name" class="question" id="name" required="" autocomplete="off" />
+      <label for="name"><span>Nombre de usuario:</span></label>
       <br>
-      <input type="text" name="username" placeholder="Nombre de Usuario:"><br>
+      <input type="text" name="email" class="question" id="email" required="" autocomplete="off" />
+      <label for="email"><span>E-Mail:</span></label>
       <br>
-      <input type="email" name="email" placeholder="E-Mail"><br>
+      <input type="number" name="phonenumber" class="question" id="phonenumber" required="" autocomplete="off" />
+      <label for="phonenumber"><span>Numero de Telefono:</span></label>
       <br>
-      <input type="number" name="phone_number" placeholder="Numero de Telefono"><br>
+      <input type="password" name="password" class="question" id="password" required="" autocomplete="off" />
+      <label for="password"><span>Nombre de Password:</span></label>
       <br>
-      <input type="password" name="password" placeholder="Password"><br>
-      <br>
-      <input type="password" name="password_confirm" placeholder="Confirmar Password"><br>
-      <br>
-      <input type="submit" value="Registrar">
+      <input type="password" name="password_confirm" class="question" id="password_confirm" required="" autocomplete="off" />
+      <label for="password_confirm"><span>Confirmar Password:</span></label>
+
+      <button id="register_confirm" type="button">Registrarse</button>
     </form>
 
   </main>
 </body>
-<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script></html>
+<script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+
+</html>

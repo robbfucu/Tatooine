@@ -44,13 +44,13 @@
           <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
         </div>
       </div>
-      <form>
-        <label for="fname">Nombre</label>
-        <input class="userdata" type="text" id="fname" name="fname">
-        <label for="lname">Direccion</label>
-        <input class="userdata" type="text" id="lname" name="lname">
+      <form id="filldata">
+        <input type="text" name="name" class="question" id="nme" required="" autocomplete="off" />
+        <label for="nme"><span>Nombre de usuario</span></label>
+        <textarea name="message" rows="2" class="question" id="msg" required="" autocomplete="off"></textarea>
+        <label for="msg"><span>Direccion:</span></label>
+        <input type="submit" value="Guardar Datos" />
       </form>
-      <button type="submit" class="proceed-btn">Guardar</button>
       <hr width="100%" noshade="noshade">
       <!-- datos de pago -->
       <section id="user_payment">
