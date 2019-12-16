@@ -116,7 +116,7 @@ body {
   margin: 20px;
 }
 
-.box p {
+.box h5 {
   padding: 20px;
 }
 
@@ -148,11 +148,9 @@ body {
 }
 
 #user_data {
-  display: flex;
   flex-direction: column;
   font-size: 28px;
-  margin-left: 250px;
-
+  margin-right: 260px;
 }
 
 #profile {
@@ -346,6 +344,7 @@ CARD REGISTER
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10%;
 }
 
 .card-number {
@@ -393,6 +392,11 @@ CARD REGISTER
   margin-right: 2px;
 }
 
+.container input{
+  width: 80%;
+  margin-left: 10px;
+  padding-left: 10px;
+}
 
 
 /* Tarjetas Guardadas*/
@@ -636,6 +640,25 @@ CARD REGISTER
   margin-bottom: 10px;
 }
 
+#user_data{
+  display: none;
+}
+#user_payment{
+ display: none;
+ margin-top: 20px;
+  
+}
+#user_payment h2{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+#user_data:target{
+  display: block;
+}
+#user_payment:target{
+  display: block;
+}
 /* Responsivo para min 768 y max 991  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -767,12 +790,6 @@ CARD REGISTER
     margin-bottom: 10px;
   }
 
-  #user_data {
-    width: 70%;
-    margin-left: 75px;
-
-  }
-
   hr {
     width: 100%;
   }
@@ -799,6 +816,10 @@ CARD REGISTER
 
   #user_data {
     width: 60%;
+    margin-left: 75px;
+  }
+  #user_payment{
+    margin-left: 10%;
   }
 
   hr {
@@ -873,4 +894,5 @@ CARD REGISTER
   #register_confirm{
     width: 50%;
   }
+
 }
